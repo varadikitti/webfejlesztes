@@ -540,6 +540,10 @@ input, label, .pointers{
   #texts{
     max-width: 100%;
   }
+
+  #human{
+    max-width: 80%;
+  }
   
   .gamemushu{
     font-size: smaller;
