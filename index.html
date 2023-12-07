@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kitti Váradi">
+    <meta name="description" content="Adventure with some cartoon characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Station</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1/jquery-3.7.1.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./media/pictures/mickey.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap">
+    
+</head>
+
+<body>
+    
+    <header class="container">
+        <div class="animationstation">
+            Animation Station
+        </div>
+    </header>
+
+    <nav class="menusor">
+        <a href="#" class="active"><img src="./media/pictures/home.png" alt="Home" class="homeicon"></a>
+        <a href="cinderella.html">Cinderella</a>
+        <a href="stitch.html">Stitch</a>
+        <a href="rapunzel.html">Rapunzel</a>
+        <a href="mushu.html">Mushu</a>
+        <a href="kuzco.html">Kuzco</a>
+    </nav>
+      
+    <article class="container homepage">
+
+        <section class="container welcomemsgs necessary boxshadow">
+            Why are cartoons a necessary ingredient in the recipe of life? <br><br>
+            In the colorful tapestry of life, everyone has a set of cartoon characters that hold a special place in their hearts. These characters, with their unique personalities and captivating stories, have a way of touching our souls and sparking our imaginations. But can you pick just one favorite? Yeah, me neither… The truth is, each character brings something unique to the table, making it nearly impossible to choose a single favorite.
+        </section>
+
+        <section class="container welcomemsgs innerchild boxshadow">
+            This is where the magic of our inner child comes into play. Our inner child, with its boundless imagination and insatiable curiosity, allows us to connect with these characters on a deeper level. It reminds us of the joy of discovery, the thrill of adventure, and the beauty of seeing the world through the eyes of wonder and awe. So, let's embrace our inner child, dive into the enchanting world of our favorite cartoon characters.
+        </section>
+
+        <section class="container welcomemsgs greetingtxt boxshadow">
+            Greetings, adventurer! <br><br>
+            Step into a world of magic and wonder with our Cartoon Heroes!
+            Prepare to be swept off your feet as you embark on an extraordinary journey into the heart of enchantment. Here, you will explore the captivating stories and unforgettable escapades of your favorite characters. From the regal charm and timeless elegance of our Princesses, to the lovable mischief of our Alien Friend, every moment is a delightful surprise. Experience the fiery spirit and indomitable courage of our Dragon Companion, and join in the hilarious adventures of our Emperor-turned-Llama. <br>
+            In our magical kingdom, there's a unique story waiting to be discovered by everyone, making our world a treasure trove of fun, fantasy, and adventure.
+            Unearth intriguing fun facts, engage in thrilling games, and immerse yourself in the rich lore and fascinating tales of these beloved characters. Every day in our kingdom is a new adventure, where dreams come true and magic is just a heartbeat away. <br><br>
+            So, what are you waiting for? Step into our magical kingdom and let the grand adventure unfold. Here, every day is a journey filled with wonder, excitement, and the pure joy of discovery.
+            Let the magic begin! ✨
+        </section>
+
+        <section class="container welcomemsgs introduction boxshadow" onclick="mipausesong()">
+            Allow me to introduce you to your unparalleled navigator, who is thrilled to accompany you on this enchanting journey. He will be your beacon, illuminating the path and providing you with the guidance needed for each task you undertake.
+        </section>    
+
+        <section class="container mikesection" onclick="miplaysong()">
+            <img src="./media/pictures/mike-intro.png" alt="mike" class="mikespicture"> <!-- An Easter egg describes hidden code within a software application or DVD (digital versatile disc) that only runs if a special procedure is performed (undocumented function). https://www.computerhope.com/jargon/e/eastereg.htm-->
+            <audio id="misong"><source src="./media/audio/mincacapella.mp3" type="audio/mpeg"></audio>
+        </section>
+
+        <section class="container welcomemsgs innerchild boxshadow spaceafter">
+            Click on Cinderella if you want to start at the beginning!
+        </section>
+        
+
+        <section class="container characterlist">
+            <img src="..//media/pictures/c0.png" alt="cinderella" id="cinderella" onclick="openc()">
+            <img src="..//media/pictures/s0.png" alt="stitch" id="stitch" onclick="opens()">
+            <img src="..//media/pictures/t0.png" alt="rapunzel" id="rapunzel" onclick="openr()">
+            <img src="..//media/pictures/m0.png" alt="mushu" id="mushu" onclick="openm()">
+            <img src="..//media/pictures/e0.png" alt="kuzco" id="kuzco" onclick="openk()">
+        </section>
+    </article>
+
+
+    <footer class="container">
+        <div class="container feet">Website designed and developed by: Kitti Váradi</div>
+        <div class="container feet">Contact me: varadikitty@gmail.com</div>
+        <div class="container feet owners">This is an unofficial fan site, not endorsed by or affiliated with the characters' rights holders. All trademarks and copyrights are the property of their owners.</div>
+    </footer>
+    
+</body>
+</html>

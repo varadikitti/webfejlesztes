@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kitti Váradi">
+    <meta name="description" content="Adventure with some cartoon characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Station - Rapunzel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1/jquery-3.7.1.js"></script>
+    <script src="galleria-1.6.1/dist/galleria.js"></script>
+    <script src="galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="./media/pictures/mickey.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap">
+
+    <script src="script.js"></script>
+
+    <script> 
+        $(document).ready(function() {
+            $('#slideshow').galleria( {width:800, height:500} ); 
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <header class="container">
+        <div class="animationstation">
+            Animation Station
+        </div>
+    </header>
+
+    <nav class="menusor">
+        <a href="index.html"><img src="./media/pictures/home.png" alt="Home" class="homeicon"></a>
+        <a href="cinderella.html">Cinderella</a>
+        <a href="stitch.html">Stitch</a>
+        <a href="#" class="active">Rapunzel</a>
+        <a href="mushu.html">Mushu</a>
+        <a href="kuzco.html">Kuzco</a>
+    </nav>
+      
+    <article class="container rapunzelpage">
+
+        <section class="container stories bgstory_rapunzel boxshadow">
+            About the character
+        </section>
+
+        <section class="container spaceafter stories bgstory_rapunzel boxshadow">
+            Rapunzel is the protagonist of Disney's 2010 animated feature film Tangled. She is the princess of the kingdom of Corona, known for her long, magical, golden hair. As a child, Rapunzel was abducted by a wicked crone and locked away in a remote tower for eighteen years - during which, she became fascinated with a phenomenon involving "floating lights" that would only appear on her birthday. With the aid of the handsome thief, Flynn Rider, Rapunzel escaped her tower to learn more about the lights and pursue her dream of exploring the outside world.
+            Rapunzel is loosely based on the protagonist of the classic German fairy tale Rapunzel by the Brothers Grimm. She is the tenth official Disney Princess and is also the first to originate from a fully computer-animated film.
+        </section>
+
+        <section class="container stories rapunzelpictures boxshadow">
+            Here you can see the most beautiful memories of our beloved Rapunzel. How fond memories they are! 
+        </section>
+
+        <section id="slideshow" class="container spaceafter galleria">
+                <img src="./media/pictures/tangled1.png" alt="Whipping up delicious treats that make my taste buds dance!" title="Baking"> 
+                <img src="./media/pictures/tangled2.png" alt="Sneaking up on Pascal and watching him jump in surprise!" title="Scaring Pascal">
+                <img src="./media/pictures/tangled3.png" alt="Molding clay into beautiful shapes and designs." title="Pottery">
+                <img src="./media/pictures/tangled4.png" alt="Creating colorful masterpieces that capture the beauty of the world." title="Painting">
+                <img src="./media/pictures/tangled14.png" alt="Weaving yarn into cozy blankets and warm scarves." title="Knitting">
+                <img src="./media/pictures/tangled6.png" alt="Keeping the tower spick and span so I can enjoy my hobbies!" title="Chores">
+                <img src="./media/pictures/tangled7.png" alt="Whipping up delicious treats that make my taste buds dance!" title="Baking">
+                <img src="./media/pictures/tangled8.png" alt="Strategizing and outsmarting my opponent with every move." title="Playing chess">
+                <img src="./media/pictures/tangled10.png" alt="I so take after her! :)" title="Spending time with mom">
+                <img src="./media/pictures/tangled9.png" alt="Strumming sweet melodies that fill the tower with music." title="Playing guitar">
+                <img src="./media/pictures/tangled11.png" alt="Keeping the tower spick and span so I can enjoy my hobbies!" title="Chores">
+                <img src="./media/pictures/tangled12.png" alt="Having fun with my best friend." title="Playing board games">
+                <img src="./media/pictures/tangled13.png" alt="Creating candles that fill the tower with delightful scents." title="Making candles">
+                <img src="./media/pictures/tangled5.png" alt="Creating colorful masterpieces that capture the beauty of the world." title="Painting">
+                <img src="./media/pictures/tangled15.png" alt="Trying to find my friend in this 'huge' tower. So boring, I always win..." title="Playing hide-and-seek">
+                <img src="./media/pictures/tangled16.png" alt="Getting lost in the pages of a good book and exploring new worlds." title="Reading">
+                <img src="./media/pictures/tangled17.png" alt="Playing games, having so much fun!" title="Playing">
+        </section>
+        
+        <section class="container stories bgstory_rapunzel boxshadow">
+            Wait… Something doesn't feel right. Do you know what it is? Give Rapunzel some advice!
+        </section>
+
+        <section class="container stories bgstory_rapunzel rapunzelform boxshadow spaceafter">
+            <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post">
+                <label for="advice0"><input type="radio" name="rapunzelradio" value="Leave_the_tower" id="advice0">You never left this tower. It is not healthy!</label> <br>
+                <label for="advice1"><input type="radio" name="rapunzelradio" value="Unfriend_Pascal" id="advice1">Pascal doesn't seem to be a true friend…</label> <br>
+                <label for="advice2"><input type="radio" name="rapunzelradio" value="Spend_more_time_with_your_mother" id="advice2" checked>You should spend more time with your mother!</label> <br>
+                <label for="advice3"><input type="radio" name="rapunzelradio" value="Practice_painting" id="advice3">Practice painting, you're gonna be good at it one day!</label> <br>
+                <label for="advice4"><input type="radio" name="rapunzelradio" value="Dye_your_hair" id="advice4">You should dye your hair, it is so boring like this!</label> <br><br>
+                
+                <div class="container rapunzelbuttondiv">
+                    <input class="rapunzelbutton boxshadow" type="submit" value="Send my answer">
+                </div>
+                
+            </form>
+        </section>
+        
+        <section class="container spaceafter mikephoto2div">
+            <div class="container stories rapunzelbutton boxshadow" onclick="openm()">
+                Click on me if you are ready to continue!
+            </div>
+            <div>
+                <img class="mikephoto2" src="./media/pictures/mike.png" alt="mike" onclick="openm()">
+            </div>
+        </section>
+
+    </article>
+
+
+    <footer class="container">
+        <div class="container feet">Website designed and developed by: Kitti Váradi</div>
+        <div class="container feet">Contact me: varadikitty@gmail.com</div>
+        <div class="container feet owners">This is an unofficial fan site, not endorsed by or affiliated with the characters' rights holders. All trademarks and copyrights are the property of their owners.</div>
+    </footer>
+    
+</body>
+</html>
