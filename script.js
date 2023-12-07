@@ -232,6 +232,7 @@ function help(){
   document.getElementById("helphim").style.display = "block";
   document.getElementById("potions").style.display = "block";
   document.getElementById("llama").style.display = "block";
+  document.getElementById("human").style.display = "none";
 }
 
 function potion0(){
