@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kitti Váradi">
+    <meta name="description" content="Adventure with some cartoon characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Station - Mushu</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1/jquery-3.7.1.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../media/pictures/mickey.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <header class="container">
+        <div class="animationstation">
+            Animation Station
+        </div>
+    </header>
+
+    <nav class="menusor">
+        <a href="index.html"><img src="../media/pictures/home.png" alt="Home" class="homeicon"></a>
+        <a href="cinderella.html">Cinderella</a>
+        <a href="stitch.html">Stitch</a>
+        <a href="rapunzel.html">Rapunzel</a>
+        <a href="#" class="active">Mushu</a>
+        <a href="kuzco.html">Kuzco</a>
+    </nav>
+      
+    <article class="container mushupage">
+
+        <section class="container stories bgstory_mushu boxshadow">
+            About the character
+        </section>
+
+        <section class="container spaceafter stories bgstory_mushu boxshadow">
+            Mushu used to be a guardian spirit of the Fa family, but he had been demoted to the humiliating position of an incense burner and gong-ringer for the deceased Fa ancestors ever since he failed to protect a family member, a soldier named Fa Deng, resulting in the soldier's demise by decapitation (he is seen carrying his own head as a spirit). Mushu's reputation would suffer dearly from this, with the eldest of the ancestors refusing to even acknowledge Mushu as a "real dragon", evoking a bitter and eager-to-please side to his personality.
+        </section>
+
+        <section class="container spaceafter mikephoto2div">
+            <div>
+                <img class="mushuphoto" src="../media/pictures/m5.png" alt="mushu">
+            </div>
+            <div class="container stories bgstory_mushu quotemushu boxshadow">
+                "I am the guardian of lost souls! I am the powerful, the pleasurable, the indestructible Mushu!"
+            </div>
+        </section>
+
+        <section class="container stories gamemushu boxshadow">
+            What does it take to become the best soldier in the army? Let me teach you. Actually i'm a professional trainer myself. Listen to the song and answer the questions!
+        </section>
+
+        <section class="container stories gamemushu boxshadow">
+            <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post">
+
+                What did the parents send, according to Li Shang?<br>
+                &emsp;&emsp;&emsp;<label for="daughters"><input type="radio" name="parents" id="daughters"> &nbsp; daughters</label> <br>
+                &emsp;&emsp;&emsp;<label for="sons"><input type="radio" name="parents" id="sons"> &nbsp; sons</label> <br>
+                &emsp;&emsp;&emsp;<label for="sandwiches"><input type="radio" name="parents" id="sandwiches"> &nbsp; sandwiches</label> <br><br>
+
+                What's gonna be the result of the training?<br>
+                &emsp;&emsp;&emsp;<label for="math"><input type="checkbox" id="math" > &nbsp; The participants will be able to do math exercises on their own.</label><br>
+                &emsp;&emsp;&emsp;<label for="soldiers"><input type="checkbox" id="soldiers" > &nbsp; He will make men out of them.</label><br>
+                &emsp;&emsp;&emsp;<label for="man"><input type="checkbox" id="man" > &nbsp; They are going to be soldiers.</label><br>
+                &emsp;&emsp;&emsp;<label for="cpr"><input type="checkbox" id="cpr" > &nbsp; They will be able to perform CPR correctly.</label><br><br>
+                
+                What are the qualities that a soldier has to have?<br>
+                &emsp;&emsp;&emsp;<label for="lion"><input type="checkbox" id="lion" > &nbsp; Have the heart of a lion.</label><br>
+                &emsp;&emsp;&emsp;<label for="within"><input type="checkbox" id="within" > &nbsp; Have the fire within.</label><br>
+                &emsp;&emsp;&emsp;<label for="findcenter"><input type="checkbox" id="findcenter" > &nbsp; Have to find their center.</label><br>
+                &emsp;&emsp;&emsp;<label for="bebrave"><input type="checkbox" id="bebrave" > &nbsp; Be brave.</label><br>
+                &emsp;&emsp;&emsp;<label for="beaman"><input type="checkbox" id="beaman" > &nbsp; Be a man.</label><br>
+                &emsp;&emsp;&emsp;<label for="ocean"><input type="checkbox" id="ocean" > &nbsp; Be as wild as the ocean.</label><br>
+                &emsp;&emsp;&emsp;<label for="forest"><input type="checkbox" id="forest" > &nbsp; Be as tranquil as a forest.</label><br><br>
+                
+                Fill in the gaps to learn the most important teachings of Li Shang: <br>
+                &emsp;&emsp;&emsp;We must be &nbsp;<input type="text" id="swift" class="mushutexts">&nbsp; as the coursing &nbsp;<input type="text" id="river" class="mushutexts">&nbsp;. <br>
+                &emsp;&emsp;&emsp;With all the &nbsp;<input type="text" id="force" class="mushutexts">&nbsp; of a great &nbsp;<input type="text" id="typhoon" class="mushutexts">&nbsp;. <br>
+                &emsp;&emsp;&emsp;With all the &nbsp;<input type="text" id="strength" class="mushutexts">&nbsp; of a raging &nbsp;<input type="text" id="fire" class="mushutexts">&nbsp;. <br>
+                &emsp;&emsp;&emsp;<input type="text" id="mysterious" class="mushutexts">&nbsp; as the dark side of the &nbsp;<input type="text" id="moon" class="mushutexts">&nbsp;. <br><br>
+
+                When might the soldiers survive?<br>
+                &emsp;&emsp;&emsp;<label for="enough"><input type="radio" name="survive" id="enough"> &nbsp; If they are strong enough.</label> <br>
+                &emsp;&emsp;&emsp;<label for="equipment"><input type="radio" name="survive" id="equipment"> &nbsp; If they can afford to buy the right pieces of equipment.</label> <br>
+                &emsp;&emsp;&emsp;<label for="order"><input type="radio" name="survive" id="order"> &nbsp; If they heed Li Shang's every order.</label> <br><br>             
+                
+                <div class="container rapunzelbuttondiv">
+                    <section id="mlisten" class="container stories mushubutton boxshadow" style="display:none" onclick="mplaysong()">
+                        Listen to the song! 
+                        <audio id="msong"><source src="../media/audio/illmakeamanoutofyou.mp3" type="audio/mpeg"></audio>
+                    </section>
+
+                    <section id="mpause" class="container stories mushubutton boxshadow" style="display:none" onclick="mpausesong()">
+                        Pause the song.
+                    </section>
+
+                    <section id="mushuresult" class="container stories mushubutton boxshadow" onclick="checkmushu()">
+                        Check my solution!
+                    </section>
+                </div>
+            </form>            
+        </section>
+
+        <section id="tolast" class="container spaceafter" style="display: none;">
+            <div>
+                <img class="mikephoto2" src="../media/pictures/mike3.png" alt="mike" onclick="openk()">
+            </div>
+            <div class="container stories quotemushu rapunzelbutton boxshadow" onclick="openk()">
+                Click on me for your last destination!
+            </div>
+        </section>
+
+    </article>
+
+
+    <footer class="container">
+        <div class="container feet">Website designed and developed by: Kitti Váradi</div>
+        <div class="container feet">Contact me: varadikitty@gmail.com</div>
+        <div class="container feet owners">This is an unofficial fan site, not endorsed by or affiliated with the characters' rights holders. All trademarks and copyrights are the property of their owners.</div>
+    </footer>
+    
+</body>
+</html>

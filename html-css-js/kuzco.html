@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kitti Váradi">
+    <meta name="description" content="Adventure with some cartoon characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Station - Kuzco</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1/jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../media/pictures/mickey.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap">
+
+    <script src="script.js"></script>
+
+    <script>
+        $(document).ready(function(){ 
+        $("#myform").validate({ 
+            rules:{
+            name: "required",
+            mail:{
+                required: true,
+                email: true},
+            tel:{
+                required: true,
+                minlength: 11},
+            texts:{
+                required: true,
+            },
+            dat:{
+                required: true,
+            },
+            time:{
+                required: true,
+            },
+            },
+
+            messages: {
+            name: "Name is required!",
+            mail: {
+                required: "Email is required!",
+                email: "Non-existent email adress"},
+            tel: "A valid phone number is required!",
+            texts: "Please, enter your answer!",
+            dat: "Date is required!",
+            time: "Time is required!",
+            },
+        });
+        });
+    </script>
+
+    <style>
+        label.error{color: #FB3A3A;}
+    </style>
+</head>
+
+<body>
+    
+    <header class="container">
+        <div class="animationstation">
+            Animation Station
+        </div>
+    </header>
+
+    <nav class="menusor">
+        <a href="index.html"><img src="../media/pictures/home.png" alt="Home" class="homeicon"></a>
+        <a href="cinderella.html">Cinderella</a>
+        <a href="stitch.html">Stitch</a>
+        <a href="rapunzel.html">Rapunzel</a>
+        <a href="mushu.html">Mushu</a>
+        <a href="#" class="active">Kuzco</a>
+    </nav>
+      
+    <article class="container kuzcopage">
+
+        <section class="container stories bgstory_kuzco boxshadow">
+            About the character
+        </section>
+
+        <section class="container stories bgstory_kuzco boxshadow spaceafter">
+            Kuzco is the young Emperor (Sapa Inca) of the Inca Empire, but he's sarcastic; famously throwing an old man (Rudy) from a window for "throwing off his groove". 
+            The treachery of the royal advisor Yzma causes a mix up that, instead of killing him, turns him into a llama. Kuzco assumes a peasant man named Pacha changed him as revenge for plotting to destroy his village to build Kuzco's vacation house. 
+            But Pacha insists he's innocent and offers to take Kuzco back to the palace if he promises to give up his plan to ruin the village. 
+            During the three day journey, Kuzco and Pacha learn to understand each other and work together to reach their goal and Kuzco is returned to his normal state. Changed by this journey he apologizes to the old man and builds a far simpler vacation house on the hilltop next to Pacha's.
+        </section>
+
+        <section class="container">
+            <section class="container_column">
+                <div class="stories survey boxshadow">
+                    Survey
+                </div>
+                
+                <div class="stories survey boxshadow">
+                    You have reached the end of this journey, but before you go… Please tell Kuzco about your experience! 
+                </div>
+            </section> 
+            <img class="kuzcoimage" src="../media/pictures/e-kuzco3.png" alt="kuzco">
+        </section>
+
+        <section class="container stories kuzcosurvey boxshadow spaceafter">
+            <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" novalidate>
+                <label for="name">Name: &emsp;<input type="text" name="name" id="name"></label><br><br>
+
+                <label for="mail">Email: &emsp;<input type="email" name="mail" id="mail"></label><br><br>          
+
+                <label for="tel">Phone: &emsp;<input type="tel" value="06-" name="tel" id="tel"></label><br><br><br>                    
+                
+                Would you recommend this website to others? <br>
+                &emsp;&emsp;&emsp;<label for="y"><input type="radio" name="r" value="yes" id="y">Yes.</label> <br>
+                &emsp;&emsp;&emsp;<label for="d"><input type="radio" name="r" value="definitely" id="d" checked>Definitely!</label> <br><br>
+
+                How challenging did you find the game? <br>
+                &emsp;&emsp;&emsp;<input type="range" min="1" max="10" step ="1" value="5" name="challenging"> <br><br>
+
+                Did you encounter any bugs or glitches while playing the game? <br>
+                &emsp;&emsp;&emsp;<label for="homep"><input type="checkbox" name="homep" id="homep">Yes, on the home page.</label> <br>
+                &emsp;&emsp;&emsp;<label for="cinderellap"><input type="checkbox" name="cinderellap" id="cinderellap">Yes, on Cinderella's page.</label> <br>
+                &emsp;&emsp;&emsp;<label for="stitchp"><input type="checkbox" name="stitchp" id="stitchp">Yes, on Stitch's page.</label> <br>
+                &emsp;&emsp;&emsp;<label for="rapunzelp"><input type="checkbox" name="rapunzelp" id="rapunzelp">Yes, on Rapunzel's page.</label> <br>
+                &emsp;&emsp;&emsp;<label for="mushup"><input type="checkbox" name="mushup" id="mushup">Yes, on Mushu's page.</label> <br>
+                &emsp;&emsp;&emsp;<label for="kuzcop"><input type="checkbox" name="kuzcop" id="kuzcop">Yes, on this page.</label> <br>
+                &emsp;&emsp;&emsp;<label for="nope"><input type="checkbox" name="nope" id="nope">Nope, it's just perfect. :D</label> <br><br>
+
+                <label for="texts">What improvements would you suggest for the game? <br>&emsp;&emsp;&emsp;<textarea name="texts" id="texts" cols="40" rows="5"></textarea></label><br><br>
+
+                Please choose the date when you completed the adventure! <br>
+                &emsp;&emsp;&emsp;<input type="date" name="dat"> <br><br>
+
+                How much time did it take you to finish the tasks? (min) <br>
+                &emsp;&emsp;&emsp;<input type="number" min="1" max="120" step="1" name="time"> <br><br>
+                
+                
+                <label for="favoritecharacter">Who was your favorite character? <br>
+                &emsp;&emsp;&emsp;<select name="favoritecharacter" id="favoritecharacter">
+                        <option value="" disabled selected>Choose from the list</option>
+                        <option value="Mike">Mike</option>
+                        <option value="Cinderella">Cinderella</option>
+                        <option value="Stitch">Stitch</option>
+                        <option value="Rapunzel">Rapunzel</option>
+                        <option value="Mushu">Mushu</option>
+                        <option value="Kuzco">Kuzco</option>
+                    </select>
+                </label><br><br>
+
+                Which three colors do you think best represent them?<br>
+                &emsp;&emsp;&emsp;<input type="color">&emsp;<input type="color">&emsp;<input type="color"><br><br><br>
+                
+                <section class="container">
+                    <div>
+                        <input type="reset" value="Reset" class="kuzcobutton">&emsp;<input type="submit" value="Submit" class="kuzcobutton">
+                    </div>
+                </section>
+            </form>
+        </section>
+
+        
+
+        <section class="container spaceafter helpkuzco">
+            
+            <div class="container stories survey boxshadow pointers spaceafter helpkuzco" onclick="help()">
+                One more thing if you are not in a hurry. Kuzco is still a llama. <br> Can you help him return to his normal state? Click on me to start!
+            </div>
+            <div>
+                <img class="mikephoto3" src="../media/pictures/mike.png" alt="mike" onclick="help()">
+            </div>
+            <div class="container stories survey boxshadow rapunzelbutton helpkuzco" id="choose" style="display: none;">
+                Choose a potion to turn Kuzco back to human. 
+            </div>
+        </section>
+
+        <section id="helphim" style="display: none;">
+            
+            <section class="container helplist" id="llama" style="display: none;">
+                <img src="..//media/pictures/e-g2.png" alt="llama" id="">
+            </section>
+            <section class="container helplist" id="bird" style="display: none;">
+                <img src="..//media/pictures/e-g4.png" alt="bird" id="">
+            </section>
+            <section class="container helplist" id="whale" style="display: none;">
+                <img src="..//media/pictures/e-g0.png" alt="whale" id="">
+            </section>
+            <section class="container helplist" id="turtle" style="display: none;">
+                <img src="..//media/pictures/e-g3.png" alt="turtle" id="">
+            </section>                
+            
+
+            <section class="container helplist" id="potions" style="display: none;">
+                <img src="..//media/pictures/potion.png" alt="potion0" id="potion0" onclick="potion0()">
+                <img src="..//media/pictures/potion.png" alt="potion1" id="potion1" onclick="potion1()">
+                <img src="..//media/pictures/potion.png" alt="potion2" id="potion2" onclick="potion2()">
+                <img src="..//media/pictures/potion.png" alt="potion3" id="potion3" onclick="potion3()">
+                <img src="..//media/pictures/potion.png" alt="potion4" id="potion4" onclick="potion4()">
+            </section>
+
+        </section>
+        
+        <section class="container  spaceafter" id="human" style="display: none;">
+            <section class="container">
+            <div class="">
+                    <img class="" src="..//media/pictures/e-g1.png" alt="human">
+                </div>
+                <div class="container stories bgstory_stitch survey boxshadow helpkuzco">
+                    Thank you my Friend! 
+                </div>
+            </section>
+        </section>
+
+    </article>
+
+
+    <footer class="container">
+        <div class="container feet">Website designed and developed by: Kitti Váradi</div>
+        <div class="container feet">Contact me: varadikitty@gmail.com</div>
+        <div class="container feet owners">This is an unofficial fan site, not endorsed by or affiliated with the characters' rights holders. All trademarks and copyrights are the property of their owners.</div>
+    </footer>
+    
+</body>
+</html>

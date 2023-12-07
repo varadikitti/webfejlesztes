@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Kitti Váradi">
+    <meta name="description" content="Adventure with some cartoon characters">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Station - Stitch</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="jquery-3.7.1/jquery-3.7.1.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="../media/pictures/mickey.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif&display=swap">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    
+    <header class="container">
+        <div class="animationstation">
+            Animation Station
+        </div>
+    </header>
+
+    <nav class="menusor">
+        <a href="index.html"><img src="../media/pictures/home.png" alt="Home" class="homeicon"></a>
+        <a href="cinderella.html">Cinderella</a>
+        <a href="#" class="active">Stitch</a>
+        <a href="rapunzel.html">Rapunzel</a>
+        <a href="mushu.html">Mushu</a>
+        <a href="kuzco.html">Kuzco</a>
+    </nav>
+      
+    <article class="container stitchpage">
+
+        <section class="container stories bgstory_stitch boxshadow">
+            About the character
+        </section>
+
+        <section class="container stories bgstory_stitch spaceafter boxshadow">
+            Stitch, also known as Experiment 626, is an illegal genetic experiment created by Jumba Jookiba, one of the titular protagonists of the Lilo & Stitch franchise alongside Lilo, and the most prominent lead character of the franchise overall, appearing in all major media. 
+            His original primary function is to cause chaos across the galaxy by destroying everything he touches. He is designed to be abnormally strong, virtually indestructible, super-intelligent, and very mischievous. His one true place is with Lilo and her 'ohana.
+        </section>
+
+        <section class="container rapunzelbuttondiv spaceafter">
+            <div class="container stories bgstory_stitch okie_taka boxshadow">
+                Okie-taka! Let's kick off this game!
+            </div>
+            <div class="rapunzelbuttondiv">
+                <img class="stitchphoto" src="../media/pictures/s2.png" alt="stitch">
+            </div>
+        </section>
+        
+        <section class="container stories bgstory_stitch spaceafter boxshadow">
+            Lilo didn't understand tantalog at first. Jumba promised her to make a robot, which will help her translate Stitch's sentences. However, Jumba doesn't have the time to make the dictionary and to program the robot as well, because he is a really busy evil genius. Can you help him to pair the english translations with the expressions in tantalog? Also, please choose ten phrases, that are often used by Stitch, because the robot won't have enough memory to store all the expressions.
+        </section>
+        
+        <table class="bgstory_stitch stitchtable boxshadow">
+            <tr>
+                <td>
+                    <label for="hagata"><input type="checkbox" name="hagata" id="hagata" > &nbsp; Hagata</label>
+                </td>
+                <td>
+                    <select id="dictionary0" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="takka"><input type="checkbox" name="takka" id="takka" > &nbsp; Takka</label>
+                </td>
+                <td>
+                    <select id="dictionary1" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="kata"><input type="checkbox" name="kata" id="kata" > &nbsp; Kata baka dooka</label>
+                </td>
+                <td>
+                    <select id="dictionary2" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="nukasha"><input type="checkbox" name="nukasha" id="nukasha" > &nbsp; Nukasha</label>
+                </td>
+                <td>
+                    <select id="dictionary3" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="imhaater"><input type="checkbox" name="imhaater" id="imhaater" > &nbsp; Imhaater</label>
+                </td>
+                <td>
+                    <select id="dictionary4" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="dunga"><input type="checkbox" name="dunga" id="dunga" > &nbsp; Dunga haga blabla</label>
+                </td>
+                <td>
+                    <select id="dictionary5" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="soka"><input type="checkbox" name="soka" id="soka" > &nbsp; Soka</label>
+                </td>
+                <td>
+                    <select id="dictionary6" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="gaba"><input type="checkbox" name="gaba" id="gaba" > &nbsp; Gaba</label>
+                </td>
+                <td>
+                    <select id="dictionary7" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="iki"><input type="checkbox" name="iki" id="iki" > &nbsp; Iki bah bah</label>
+                </td>
+                <td>
+                    <select id="dictionary8" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="okie"><input type="checkbox" name="okie" id="okie" > &nbsp; Okie-taka</label>
+                </td>
+                <td>
+                    <select id="dictionary9" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="haka"><input type="checkbox" name="haka" id="haka" > &nbsp; Haka taba</label>
+                </td>
+                <td>
+                    <select id="dictionary10" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="miki"><input type="checkbox" name="miki" id="miki" > &nbsp; Miki miki</label>
+                </td>
+                <td>
+                    <select id="dictionary11" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="meega"><input type="checkbox" name="meega" id="meega" > &nbsp; Meega</label>
+                </td>
+                <td>
+                    <select id="dictionary12" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phaa"><input type="checkbox" name="phaa" id="phaa" > &nbsp; Phaa thouy</label>
+                </td>
+                <td>
+                    <select id="dictionary13" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="naga"><input type="checkbox" name="naga" id="naga" > &nbsp; Naga</label>
+                </td>
+                <td>
+                    <select id="dictionary14" class="boxhossz">
+                        <option value="" disabled selected>Translation</option>
+                        <option>How embarrassing</option>
+                        <option>Sorry</option>
+                        <option>It's your fault</option>
+                        <option>No/don't want to</option>
+                        <option>What?</option>
+                        <option>I don't like water</option>
+                        <option>Alright/okay/okey-dokey (acknowledgement)</option>
+                        <option>Me/I/I'm</option>
+                        <option>Cereal</option>
+                        <option>May I be destructive?</option>
+                        <option>Here</option>
+                        <option>Thanks</option>
+                        <option>Computer</option>
+                        <option>Gimme</option>
+                        <option>Come on</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+
+        <section id="stitchresult" class="container stories stitchbutton boxshadow" onclick="checkstitch()">
+            Check my solution!
+        </section>
+
+        <section id="torapunzel" class="container stories stitchbutton boxshadow" style="display:none" onclick="openr()">
+            Click here to continue!
+        </section>
+
+    </article>
+
+    <footer class="container">
+        <div class="container feet">Website designed and developed by: Kitti Váradi</div>
+        <div class="container feet">Contact me: varadikitty@gmail.com</div>
+        <div class="container feet owners">This is an unofficial fan site, not endorsed by or affiliated with the characters' rights holders. All trademarks and copyrights are the property of their owners.</div>
+    </footer>
+    
+</body>
+</html>
