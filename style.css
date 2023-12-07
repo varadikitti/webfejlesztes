@@ -529,10 +529,18 @@ input, label, .pointers{
   }
 
   .kuzcosurvey{
-    width: 70%;
     padding: 10px;
+    width: 90%;
   }
 
+  #myform{
+    max-width: 100%;
+  }
+
+  #texts{
+    max-width: 100%;
+  }
+  
   .gamemushu{
     font-size: smaller;
   }
