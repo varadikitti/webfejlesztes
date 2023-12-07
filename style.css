@@ -541,10 +541,14 @@ input, label, .pointers{
     max-width: 100%;
   }
 
-  #human{
-    max-width: 80%;
+  .humandiv{
+    width: 40%;
   }
-  
+
+  #humanpic{
+    width: 120%;
+  }
+
   .gamemushu{
     font-size: smaller;
   }
