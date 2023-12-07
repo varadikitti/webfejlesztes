@@ -30,6 +30,9 @@ function mipausesong(){
   document.getElementById("misong").pause();
 }
 
+function homep(){
+  window.location.href = "index.html";
+}
 
 /*********************************************************/
 /******************  CHARACTERS' PAGES  ******************/
